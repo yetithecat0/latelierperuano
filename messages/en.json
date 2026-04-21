@@ -1,0 +1,89 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "philosophy": "Philosophy",
+    "catalog": "Catalog",
+    "litoterapia": "Lithotherapy",
+    "community": "Community",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "by": "by",
+    "tagline": "Unique 925 Silver Creations",
+    "quote": "\"By wearing one of my creations, you carry with you the earth's vibration, the whisper of the Andean wind, and the protection of ancestral guardians.\"",
+    "explore": "EXPLORE CATALOG",
+    "history": "OUR STORY"
+  },
+  "PhilosophyStrip": {
+    "text": "925 SILVER IS THE CANVAS. THE STONES, THE SOUL. MOCHICA ART, THE LEGACY.",
+    "w1": "Ancestral",
+    "w2": "Artisanal",
+    "w3": "Spiritual",
+    "w4": "Holistic",
+    "w5": "Energetic"
+  },
+  "Artesano": {
+    "title": "The Artisan",
+    "p1_bold": "L'Atelier Peruano was born in 2018",
+    "p1": " with a mission that goes beyond jewelry: to create pieces in 925 silver with semi-precious stones that not only adorn, but ",
+    "p1_bold2": "accompany, protect, and heal",
+    "p1_end": ".",
+    "p2": "The first steps were not easy. A small space, limited resources, family life interwoven with every hammer strike. But Yonatan never stopped believing that every obstacle was, in reality, a lesson. And so, with the same patience used to work metal — strike by strike, with fire and faith — the workshop grew.",
+    "p3_start": "Today, ",
+    "p3_bold": "L'Atelier Peruano is a benchmark of artisanal jewelry in Switzerland",
+    "p3": ". Not because it follows trends, but because it proudly ignores them. Because here, jewelry is not manufactured. Amulets are created. Stories are engraved. Memories of a people who mastered metalwork centuries before the industry existed are transmitted.",
+    "p4": "The Mochica spirit lives in every silver carved feather."
+  },
+  "NewArrivals": {
+    "label": "NEWLY FORGED",
+    "title": "New Creations",
+    "viewAll": "VIEW ALL"
+  },
+  "Catalog": {
+    "title": "Ancestral Catalog",
+    "filters": {
+      "TODOS": "ALL",
+      "AMULETOS": "AMULETS",
+      "ANILLOS": "RINGS",
+      "PULSERAS": "BRACELETS",
+      "PENDIENTES": "EARRINGS"
+    },
+    "badges": {
+      "Personalizable": "Customizable",
+      "Único": "Unique",
+      "Edición Limitada": "Limited Edition"
+    }
+  },
+  "Litoterapia": {
+    "title": "Lithotherapy:",
+    "subtitle": "Energy of the Earth",
+    "description": "Every stone is a natural antenna. I personally select semi-precious stones not only for their beauty but for their vibrations and ancient healing properties documented in Andean and global traditions."
+  },
+  "Community": {
+    "label": "THE IMPACT",
+    "title": "Community Voices"
+  },
+  "Contact": {
+    "addressTitle": "Neuchâtel, Switzerland",
+    "description": "Grand-Rue 32, 2034 Peseux\nEvery piece is a dialogue between my Peruvian heritage and my life in the Swiss mountains. I would love to hear from you.",
+    "journeyStart": "NORTH OF PERU",
+    "journeyEnd": "NEUCHÂTEL, SWITZERLAND",
+    "whatsappBtn": "DIRECT WHATSAPP",
+    "emailBtn": "SEND EMAIL",
+    "form": {
+      "name": "NAME",
+      "email": "EMAIL",
+      "subject": "SUBJECT",
+      "message": "MESSAGE",
+      "submit": "SEND MESSAGE"
+    },
+    "footer": {
+      "by": "BY YONATAN TORRES",
+      "tagline": "Artisanal Jewelry · Neuchâtel, Switzerland",
+      "copyright": "© 2026 L'Atelier Peruano · Made by artisan hands in Neuchâtel, Switzerland"
+    }
+  },
+  "Common": {
+    "backToTop": "Back to top"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "philosophy": "Philosophie",
+    "catalog": "Catalogue",
+    "litoterapia": "Lithothérapie",
+    "community": "Communauté",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "by": "de",
+    "tagline": "Créations Uniques en Argent 925",
+    "quote": "\"En portant l'une de mes créations, vous emportez avec vous la vibration de la terre, le murmure du vent andin et la protection des gardiens ancestraux.\"",
+    "explore": "EXPLORER LE CATALOGUE",
+    "history": "NOTRE HISTOIRE"
+  },
+  "PhilosophyStrip": {
+    "text": "L'ARGENT 925 EST LA TOILE. LES PIERRES, L'ÂME. L'ART MOCHICA, L'HÉRITAGE.",
+    "w1": "Ancestral",
+    "w2": "Artisanal",
+    "w3": "Spirituel",
+    "w4": "Holistique",
+    "w5": "Énergétique"
+  },
+  "Artesano": {
+    "title": "L'Artisan",
+    "p1_bold": "L'Atelier Peruano est né en 2018",
+    "p1": " avec une mission qui va au-delà des bijoux: créer des pièces en argent 925 avec des pierres semi-précieuses qui non seulement ornent, mais aussi ",
+    "p1_bold2": "accompagnent, protègent et guérissent",
+    "p1_end": ".",
+    "p2": "Les premiers pas n'ont pas été faciles. Un petit espace, des ressources limitées, la vie de famille entrelacée avec chaque coup de marteau. Mais Yonatan n'a jamais cessé de croire que chaque obstacle était, en réalité, un enseignement. Et ainsi, avec la même patience avec laquelle on travaille le métal — coup par coup, avec le feu et avec foi — l'atelier a grandi.",
+    "p3_start": "Aujourd'hui, ",
+    "p3_bold": "L'Atelier Peruano est une référence en bijouterie artisanale en Suisse",
+    "p3": ". Non pas parce qu'il suit les tendances, mais parce qu'il les ignore avec fierté. Parce qu'ici on ne fabrique pas des bijoux. On crée des amulettes. On y grave des histoires. On transmet les mémoires d'un peuple qui a dominé l'art du métal des siècles avant que l'industrie n'existe.",
+    "p4": "L'esprit Mochica vit dans chaque plume taillée dans l'argent."
+  },
+  "NewArrivals": {
+    "label": "RÉCEMMENT FORGÉ",
+    "title": "Nouvelles Créations",
+    "viewAll": "VOIR TOUT"
+  },
+  "Catalog": {
+    "title": "Catalogue Ancestral",
+    "filters": {
+      "TODOS": "TOUS",
+      "AMULETOS": "AMULETTES",
+      "ANILLOS": "BAGUES",
+      "PULSERAS": "BRACELETS",
+      "PENDIENTES": "BOUCLES D'OREILLES"
+    },
+    "badges": {
+      "Personalizable": "Personnalisable",
+      "Único": "Unique",
+      "Edición Limitada": "Édition Limitée"
+    }
+  },
+  "Litoterapia": {
+    "title": "Lithothérapie:",
+    "subtitle": "L'Énergie de la Terre",
+    "description": "Chaque pierre est une antenne naturelle. Je sélectionne personnellement des pierres semi-précieuses non seulement pour leur beauté, mais pour leurs vibrations et propriétés curatives millénaires documentées dans la tradition andine et globale."
+  },
+  "Community": {
+    "label": "L'IMPACT",
+    "title": "Voix de la Communauté"
+  },
+  "Contact": {
+    "addressTitle": "Neuchâtel, Suisse",
+    "description": "Grand-Rue 32, 2034 Peseux\nChaque pièce est un dialogue entre mon héritage péruvien et ma vie dans les montagnes suisses. Je serai ravi de vous entendre.",
+    "journeyStart": "NORD DU PÉROU",
+    "journeyEnd": "NEUCHÂTEL, SUISSE",
+    "whatsappBtn": "WHATSAPP DIRECT",
+    "emailBtn": "ENVOYER UN EMAIL",
+    "form": {
+      "name": "NOM",
+      "email": "EMAIL",
+      "subject": "SUJET",
+      "message": "MESSAGE",
+      "submit": "ENVOYER LE MESSAGE"
+    },
+    "footer": {
+      "by": "DE YONATAN TORRES",
+      "tagline": "Bijouterie Artisanale · Neuchâtel, Suisse",
+      "copyright": "© 2026 L'Atelier Peruano · Fait par des mains artisanes à Neuchâtel, Suisse"
+    }
+  },
+  "Common": {
+    "backToTop": "Retour en haut"
+  }
+}

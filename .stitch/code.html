@@ -1,0 +1,572 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&amp;family=Dancing+Script:wght@400;700&amp;family=Cinzel:wght@400;700;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#6bddfd",
+                    "surface-container-low": "#fff3d7",
+                    "on-primary-container": "#f9ffeb",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fff8f0",
+                    "surface-tint": "#486729",
+                    "on-tertiary-fixed": "#0f1e21",
+                    "tertiary-container": "#68777b",
+                    "on-secondary": "#ffffff",
+                    "surface-variant": "#f5e1aa",
+                    "background": "#fff8f0",
+                    "inverse-surface": "#3b2f08",
+                    "surface": "#fff8f0",
+                    "primary-fixed-dim": "#add288",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#466527",
+                    "secondary-fixed-dim": "#61d5f5",
+                    "secondary": "#00677c",
+                    "secondary-fixed": "#b1ecff",
+                    "outline": "#74796b",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#006074",
+                    "primary-container": "#5e7e3d",
+                    "surface-dim": "#edd9a3",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#fff0ca",
+                    "tertiary-fixed-dim": "#b9c9cd",
+                    "on-primary-fixed": "#0e2000",
+                    "on-surface-variant": "#44483d",
+                    "on-tertiary-container": "#f8fdff",
+                    "on-background": "#231b00",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#004e5e",
+                    "inverse-primary": "#add288",
+                    "surface-container-high": "#fbe7b0",
+                    "primary-fixed": "#c9eea1",
+                    "on-primary-fixed-variant": "#314f13",
+                    "on-secondary-fixed": "#001f27",
+                    "outline-variant": "#c4c8b9",
+                    "tertiary": "#4f5f62",
+                    "surface-container": "#ffedbd",
+                    "on-surface": "#231b00",
+                    "surface-container-highest": "#f5e1aa",
+                    "on-tertiary-fixed-variant": "#3a494d",
+                    "tertiary-fixed": "#d5e5e9",
+                    "artisan-olive": "#698A48",
+                    "parchment-dark": "#C4985A",
+                    "earth-deep": "#2C1A0A"
+            },
+            "fontFamily": {
+                    "headline": ["Cormorant Garamond", "serif"],
+                    "body": ["Crimson Pro", "serif"],
+                    "label": ["Cinzel", "serif"],
+                    "signature": ["Dancing Script", "cursive"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+.parchment-texture {
+    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdyztRlCc9mWOkcOIY2MS-4EFhEGvA0Qz_zVbwwNpKdOQRcBptp2kAzaSXyn9ywupL25sMDFM4lPXQNR3tMEioxHF4UohO-yQsRjobJOQlcd4Jer5ruJNsCtw_W9W7rKM80824yTfAE4p14bptSg1F85k9pEQp8_AKjVn2M7QRNPw9_Gp3jbpbjGi30-01zPohVVUbpEpw3aOwttZRYsr6bBSEyVjSClEPNNDnurislbo2ynKiyS4zZIrDMh4ahc5JWt0s5tLxWWrK');
+    background-color: #fff8f0;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+.chakana-rotate {
+    animation: spin 60s linear infinite
+    }
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        } to {
+        transform: rotate(360deg);
+        }
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+.chiseled-shadow {
+    filter: drop-shadow(0 4px 6px rgba(35, 27, 0, 0.05))
+    }
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+</style></head><body class="parchment-texture text-on-background selection:bg-secondary-container selection:text-on-secondary-container min-h-screen">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/20 dark:bg-stone-950/20 backdrop-blur-sm">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<!-- Brand Logo -->
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: &quot;FILL&quot; 1;">filter_vintage</span>
+<span class="font-['Cinzel'] font-bold text-xl text-[#231b00] dark:text-[#edd9a3]" style="">L'ATELIER PERUANO</span>
+</div>
+<!-- Navigation Links -->
+<ul class="hidden md:flex gap-8 items-center font-['Cinzel'] uppercase tracking-widest text-sm">
+<li class="" style=""><a class="text-[#00677c] border-b border-[#00677c]/30 pb-1 hover:text-[#00677c] transition-colors duration-300" href="#" style="">Colección</a></li>
+<li class="" style=""><a class="text-[#231b00] dark:text-[#edd9a3] opacity-80 hover:text-[#00677c] transition-colors duration-300" href="#" style="">Filosofía</a></li>
+<li class="" style=""><a class="text-[#231b00] dark:text-[#edd9a3] opacity-80 hover:text-[#00677c] transition-colors duration-300" href="#" style="">Litoterapia</a></li>
+<li class="" style=""><a class="text-[#231b00] dark:text-[#edd9a3] opacity-80 hover:text-[#00677c] transition-colors duration-300" href="#" style="">Taller</a></li>
+<li class="" style=""><a class="text-[#231b00] dark:text-[#edd9a3] opacity-80 hover:text-[#00677c] transition-colors duration-300" href="#contacto" style="">Contacto</a></li>
+</ul>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-6">
+<div class="flex gap-2 text-xs font-['Cinzel'] opacity-60">
+<button class="hover:text-secondary" style="">ES</button>
+<span class="" style="">|</span>
+<button class="hover:text-secondary" style="">FR</button>
+<span class="" style="">|</span>
+<button class="hover:text-secondary" style="">EN</button>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary transition-colors" data-icon="search" style="">search</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary transition-colors" data-icon="shopping_cart" style="">shopping_cart</span>
+</div>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+<!-- Ghosted Rotating Chakana -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
+<span class="material-symbols-outlined text-[600px] chakana-rotate" style="font-variation-settings: &quot;wght&quot; 100;">filter_vintage</span>
+</div>
+<div class="relative z-10 max-w-5xl px-8 text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-outline-variant mb-6 text-4xl" data-icon="history_edu" style="">history_edu</span>
+<h1 class="font-headline text-7xl md:text-9xl mb-4 tracking-tighter text-on-surface" style="">L'ATELIER PERUANO</h1>
+<p class="font-label text-lg md:text-xl tracking-widest text-primary mb-12 uppercase" style="">de Yonatan Torres • creaciones únicas en plata 925</p>
+<div class="max-w-2xl mb-12">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="ink_pen" style="font-variation-settings: &quot;FILL&quot; 1;">ink_pen</span>
+<p class="font-signature text-3xl md:text-4xl text-primary-container italic leading-relaxed" style="">
+                    "Al portar una de mis creaciones, llevas contigo la vibración de la tierra, el susurro del viento andino y la protección de los guardianes ancestrales."
+                </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-6 font-label">
+<button class="px-10 py-4 bg-primary text-on-primary hover:bg-primary-container transition-all duration-300 tracking-widest text-sm" style="">EXPLORAR CATÁLOGO</button>
+<button class="px-10 py-4 border border-primary/20 hover:border-primary/60 transition-all duration-300 tracking-widest text-sm" style="">NUESTRA HISTORIA</button>
+</div>
+</div>
+</section>
+<!-- Philosophy Strip -->
+<section class="bg-[#2C1A0A] py-16 overflow-hidden">
+<div class="flex justify-around items-center whitespace-nowrap animate-pulse-slow">
+<div class="flex items-center gap-6 text-[#edd9a3] font-label text-2xl tracking-[0.3em]">
+<span class="" style="">ANCESTRAL</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">flare</span>
+<span class="" style="">ARTESANAL</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">flare</span>
+<span class="" style="">ESPIRITUAL</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">flare</span>
+<span class="" style="">ANCESTRAL</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">flare</span>
+<span class="" style="">ARTESANAL</span>
+</div>
+</div>
+</section>
+<!-- El Artesano -->
+<section class="py-32 max-w-screen-2xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-full h-full border border-primary/10 -z-10"></div>
+<img alt="Portrait of Yonatan Torres at his workshop" class="w-full aspect-[3/4] object-cover filter contrast-[1.1]" data-alt="artisan's hands working with silver in a rustic workshop, soft candlelight, warm and earthy tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHo9SZdeJmXGSG-hwJrymT__aFq460AJcrWfgDfbmef-YT5QN_T5rYJMv21kbZ91NDhNNE7dVSL75M5abKojMkuvRn38kJzdtGdycIgybDCC0x83F-zIOy3ORzHqSCWVPf_hpfyGKjUI0SbtBdcbQLzQ65VEq_EBasACrN016SK6BACHIOEEU8-dGQ8XxRjjOQqk_Qr8yPtQnzK_NGcEDqfXfzpK9dLT2nd4H3d-UmvNM41blzqdwgwrYlphGBzcOYNiNRRPhQOPQX" style="">
+<div class="absolute bottom-6 right-6 font-signature text-3xl text-surface-bright bg-primary/80 px-4 py-2" style="">Yonatan A. Torres</div>
+</div>
+<div class="space-y-8">
+<h2 class="font-headline text-5xl text-on-surface" style="">El Artesano</h2>
+<div class="w-20 h-0.5 bg-primary/30"></div>
+<div class="font-body text-xl leading-relaxed text-on-surface-variant space-y-6">
+<p class="break-words whitespace-normal leading-[1.7]" style=""><strong>L'Atelier Peruano nació en 2018</strong> con una misión que va más allá de la joyería: crear piezas en plata 925 con piedras semipreciosas que no solo adornan, sino que <strong>acompañan, protegen y sanan</strong>.</p>
+<p class="break-words whitespace-normal leading-[1.7]" style="">Los primeros pasos no fueron fáciles. Un espacio pequeño, recursos contados, la vida familiar entretejida con cada martillazo. Pero Yonatan nunca dejó de creer que cada obstáculo era, en realidad, una enseñanza. Y así, con la misma paciencia con la que se trabaja el metal — golpe a golpe, con fuego y con fe — el taller fue creciendo.</p>
+<p class="break-words whitespace-normal leading-[1.7]" style="">Hoy, <strong>L'Atelier Peruano es un referente de joyería artesanal en Suiza</strong>. No porque siga las tendencias, sino porque las ignora con orgullo. Porque aquí no se fabrican joyas. Se crean amuletos. Se graban historias. Se transmiten memorias de un pueblo que dominó el arte del metal siglos antes de que existiera la industria.</p>
+<p class="break-words whitespace-normal leading-[1.7]" style="">El espíritu Mochica vive en cada pluma tallada en plata.</p>
+</div>
+<div class="pt-8">
+<span class="font-signature text-5xl text-primary opacity-60" style="">L´atelier Peruano</span>
+</div>
+</div>
+</section>
+<!-- New Arrivals -->
+<section class="py-32 bg-surface-container-low/30 backdrop-blur-[2px]">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label text-sm tracking-widest text-primary" style="">RECIÉN FORJADO</span>
+<h2 class="font-headline text-5xl mt-2" style="">Nuevas Creaciones</h2>
+</div>
+<a class="font-label text-sm border-b border-primary/40 pb-1 hover:text-primary" href="#" style="">VER TODO</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden mb-4 bg-white/20 h-[400px] flex items-center justify-center p-8 border border-black/5">
+<img alt="Silver feather necklace" class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARMbWGIuN9MRoHgx2Cc6alEpXk_qx_kQuapZIUDpJu4wpgwwJ72IMfr_AmR1aA2HmK43ivKnhbsTmAax-Nx1-068nYkLSpwlbQ0IPPOUD4FWp_-_SJC1XYU4ejcWyAFaxfxdCW73njH2wVwiFCdIgFup3fOdAleFZW-Mh6qeiEEsehrIfBzkupciJjRXjCfoX86E9Lel1xaxTHP98QkaQPg7ucjOThYXKRlnYTLPYQb_3pqom_d-oySk79Ezb5ridzs8eeDClHCFlT" style="">
+<span class="absolute top-4 right-4 material-symbols-outlined text-outline-variant" data-icon="eco" style="">eco</span>
+</div>
+<h3 class="font-label text-center text-sm tracking-widest" style="">DIJE PLUMA SAGRADA</h3>
+<p class="text-center font-body italic text-primary mt-1" style="">S/ 280</p>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden mb-4 bg-white/20 h-[400px] flex items-center justify-center p-0 border border-black/5">
+<img alt="Handcrafted silver necklace with eagle head" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3QY6I5Z8oR12rMg8sek4K_o8xnd8b4wW_cHoQjuPI3Ig4aPhfj0_5ICPpVns2npHygFrBgvCle7n6MaCPuSQ1Fy3MzYhQEWjpdPUzj6ELpK4YwKaf4CJdNIqD1MQadATh8Ben74KYHy1U2Czwu8KN8UHgT3r2-T6w0fFML5Jvhf83Vg_muoxd22kL0SpU3WpprxRa7eKrKry4tVTKv7MJ_g2M0OmxRZQF0StM6Q1eXAonoyOZ4tmmgeZCvDZZYu-3q3ol2IH1mH4p" style="">
+<span class="absolute top-4 right-4 material-symbols-outlined text-surface-bright" data-icon="air" style="">air</span>
+</div>
+<h3 class="font-label text-center text-sm tracking-widest" style="">ANILLO ÁGUILA REAL</h3>
+<p class="text-center font-body italic text-primary mt-1" style="">S/ 350</p>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden mb-4 bg-white/20 h-[400px] flex items-center justify-center p-8 border border-black/5">
+<img alt="Wolf silver pendant" class="max-w-full max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_841PlnUejzAcYFyjkK6mmlXosK48Lu_1aZexTph4zd4lZh896TX_d6xKs8Uddtj0ofBTmOervQRVJKPWkF-0eIOFrcFMEEKPRnjf89B1-h8a-az9NWzoIGl_f23PMG8XKind9b_zC16FA9kPuSVFGdTz_aulrkFREYYavqSQMe6iJat3moPxdKT0MZdKI0uOlfEU7gI0uTkVz6rZsSoFoJOOfB-1uN_FwvwnihS3fvwCLApmYvw2BR10J56CEn7Z4uHIi7EuHC6q" style="">
+<span class="absolute top-4 right-4 material-symbols-outlined text-outline-variant" data-icon="forest" style="">forest</span>
+</div>
+<h3 class="font-label text-center text-sm tracking-widest" style="">TOTEM LOBO ESTELAR</h3>
+<p class="text-center font-body italic text-primary mt-1" style="">S/ 310</p>
+</div>
+<!-- Card 4 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden mb-4 bg-white/20 h-[400px] flex items-center justify-center p-8 border border-black/5">
+<img alt="Moon silver earrings" class="max-w-full max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDATSczgfFkptlRDxdGwIml25I4LlCuh5sYrFpNINeq1Hm_e05bqTtD3aVRB6EdpcDu2r1MT2-3jJ9P5Ye7EvqvcMY0HwpLbWAIyNnrFLYSyzddfN9WTEp1tYS_NcL8ZAM00ys2TD9p9_66QnR7ajIatcRNfuCBgQN_0pSxCTmsAAv6UndEHvimqMwS_Y405bjgD0PICP-KIXxUsz4TO4-S40ID7ilOP_2fz3LN-8iJsgZuw3_Cz0G6dh171_Zj7Zsv-p8fTzHkBwCR" style="">
+<span class="absolute top-4 right-4 material-symbols-outlined text-outline-variant" data-icon="dark_mode" style="">dark_mode</span>
+</div>
+<h3 class="font-label text-center text-sm tracking-widest" style="">ARETES LUNA CRECIENTE</h3>
+<p class="text-center font-body italic text-primary mt-1" style="">S/ 190</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Catalog Section with Grid -->
+<section class="py-32 max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
+<h2 class="font-headline text-5xl" style="">Catálogo Ancestral</h2>
+<div class="flex gap-6 font-label text-xs tracking-[0.2em] overflow-x-auto pb-4 w-full md:w-auto">
+<button class="border-b-2 border-primary text-primary whitespace-nowrap" style="">TODOS</button>
+<button class="opacity-40 hover:opacity-100 whitespace-nowrap" style="">AMULETOS</button>
+<button class="opacity-40 hover:opacity-100 whitespace-nowrap" style="">ANILLOS</button>
+<button class="opacity-40 hover:opacity-100 whitespace-nowrap" style="">PULSERAS</button>
+<button class="opacity-40 hover:opacity-100 whitespace-nowrap" style="">LITOTERAPIA</button>
+</div>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-y-16 gap-x-8">
+<!-- Item 1 -->
+<div class="group">
+<div class="bg-white/30 aspect-square mb-6 relative overflow-hidden flex items-center justify-center border border-black/5">
+<img alt="Handcrafted silver ring with amethyst" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYhHgqdsoi178A7kObz0PW4sVybLnk3p0AzMnR4cZZXyP6NyoBfoINKwsedefbJnW1KH7_3QwrGQx3JZF54Tq4-KfceMtSWQuX4OvJj0h36NmAhpieAMknK-BQX4DPfyziJ09knqmsgfjcDoa4jZqIPn5Gm221pbZL8fiHrh37FRy697sQPOmG8G2s9j2Ya2ZnBMRdi94LiFGO4BJSFbplcSndKG0NSEf5kBaFMCHEos1ZejUY3JmumkSN7sMmJZFvtCKgzsHp0l2H" style="">
+<span class="absolute top-4 left-4 bg-secondary text-white text-[10px] px-3 py-1 font-label uppercase tracking-widest" style="">Personalizable</span>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500"></div>
+</div>
+<div class="text-center">
+<span class="font-label text-[10px] text-secondary tracking-widest" style="">Equilibrio</span>
+<h4 class="font-label text-sm mt-1" style="">CHAKANA PLATA</h4>
+<p class="font-body text-primary italic mt-1" style="">S/ 240</p>
+</div>
+</div>
+<div class="group">
+<div class="bg-white/30 aspect-square mb-6 relative overflow-hidden flex items-center justify-center p-12 border border-black/5">
+<span class="material-symbols-outlined text-7xl text-outline-variant opacity-20" data-icon="pets" style="">pets</span>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500"></div>
+</div>
+<div class="text-center">
+<span class="font-label text-[10px] text-secondary tracking-widest" style="">Poder</span>
+<h4 class="font-label text-sm mt-1" style="">PUMA GUARDIÁN</h4>
+<p class="font-body text-primary italic mt-1" style="">S/ 320</p>
+</div>
+</div>
+<div class="group">
+<div class="bg-white/30 aspect-square mb-6 relative overflow-hidden flex items-center justify-center p-12 border border-black/5">
+<span class="material-symbols-outlined text-7xl text-outline-variant opacity-20" data-icon="flight" style="">flight</span>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500"></div>
+</div>
+<div class="text-center">
+<span class="font-label text-[10px] text-secondary tracking-widest" style="">Libertad</span>
+<h4 class="font-label text-sm mt-1" style="">CÓNDOR ANDINO</h4>
+<p class="font-body text-primary italic mt-1" style="">S/ 380</p>
+</div>
+</div>
+<div class="group">
+<div class="bg-white/30 aspect-square mb-6 relative overflow-hidden flex items-center justify-center p-12 border border-black/5">
+<span class="material-symbols-outlined text-7xl text-outline-variant opacity-20" data-icon="sunny" style="">sunny</span>
+<span class="absolute top-4 left-4 bg-secondary text-white text-[10px] px-3 py-1 font-label uppercase tracking-widest" style="">Único</span>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500"></div>
+</div>
+<div class="text-center">
+<span class="font-label text-[10px] text-secondary tracking-widest" style="">Energía</span>
+<h4 class="font-label text-sm mt-1" style="">BRAZALETE INTI</h4>
+<p class="font-body text-primary italic mt-1" style="">S/ 450</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Litoterapia (Stones) -->
+<section class="bg-[#2C1A0A]/95 py-32 relative overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<img alt="Gemstones collection" class="w-full h-full object-cover mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv8L5V2XOGgxSbBarakUH4HNrKVCcAYAXk_Oc0p6NXq-MpLP0DZeio4PLEWVfr8PrQwVw827ikgkBzaN_CcQmqEFSv0YYKs7rlkJhTptFjMsmS4Enst93OAE5ZYieBOPNThfn4N3bglI_O_l9i7VFuBmkd88N73flOd2XcWQ697-mgpiNYAryPdFcYIvOpT25HZ-rGDRfV9_mQcRiIehWvuwXGGJzO7zbJKQHmWNIHOZasGCkUWnPDSXiXCusOhYLg7b6I4vp6XVJh" style="">
+</div>
+<div class="max-w-screen-2xl mx-auto px-8 relative z-10">
+<div class="text-center mb-24">
+<span class="font-label text-secondary-container tracking-[0.4em] text-sm" style="">EL PODER DE LA TIERRA</span>
+<h2 class="font-headline text-5xl text-surface-bright mt-4" style="">Litoterapia Sagrada</h2>
+<p class="text-surface-variant/60 font-body text-lg max-w-xl mx-auto mt-6" style="">Descubre la vibración única de cada piedra y cómo armonizan tu energía vital.</p>
+</div>
+<div class="flex overflow-x-auto gap-8 pb-12 snap-x hide-scrollbar">
+<div class="min-w-[300px] snap-center bg-[#3D2918]/80 backdrop-blur-sm p-8 border border-white/5 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-indigo-900 mb-6 shadow-[0_0_20px_rgba(255,255,255,0.1)] blur-[2px]"></div>
+<h3 class="font-label text-surface-bright text-lg tracking-widest" style="">LABRADORITA</h3>
+<span class="text-secondary-container text-xs font-label mt-2" style="">Tercer Ojo</span>
+<p class="text-surface-variant/40 font-body mt-4 text-sm" style="">Misticismo &amp; Intuición</p>
+<a class="mt-8 text-surface-bright font-label text-[10px] tracking-widest border-b border-surface-bright/20 pb-1 hover:text-secondary-container transition-colors" href="#" style="">VER JOYAS</a>
+</div>
+<div class="min-w-[300px] snap-center bg-[#3D2918]/80 backdrop-blur-sm p-8 border border-white/5 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-blue-800 mb-6 shadow-[0_0_20px_rgba(255,255,255,0.1)] blur-[2px]"></div>
+<h3 class="font-label text-surface-bright text-lg tracking-widest" style="">LAPIS LÁZULI</h3>
+<span class="text-secondary-container text-xs font-label mt-2" style="">Garganta</span>
+<p class="text-surface-variant/40 font-body mt-4 text-sm" style="">Verdad &amp; Comunicación</p>
+<a class="mt-8 text-surface-bright font-label text-[10px] tracking-widest border-b border-surface-bright/20 pb-1 hover:text-secondary-container transition-colors" href="#" style="">VER JOYAS</a>
+</div>
+<div class="min-w-[300px] snap-center bg-[#3D2918]/80 backdrop-blur-sm p-8 border border-white/5 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-slate-200 mb-6 shadow-[0_0_20px_rgba(255,255,255,0.1)] blur-[2px]"></div>
+<h3 class="font-label text-surface-bright text-lg tracking-widest" style="">PIEDRA LUNA</h3>
+<span class="text-secondary-container text-xs font-label mt-2" style="">Sacro</span>
+<p class="text-surface-variant/40 font-body mt-4 text-sm" style="">Crecimiento &amp; Equilibrio</p>
+<a class="mt-8 text-surface-bright font-label text-[10px] tracking-widest border-b border-surface-bright/20 pb-1 hover:text-secondary-container transition-colors" href="#" style="">VER JOYAS</a>
+</div>
+<div class="min-w-[300px] snap-center bg-[#3D2918]/80 backdrop-blur-sm p-8 border border-white/5 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-purple-700 mb-6 shadow-[0_0_20px_rgba(255,255,255,0.1)] blur-[2px]"></div>
+<h3 class="font-label text-surface-bright text-lg tracking-widest" style="">AMATISTA</h3>
+<span class="text-secondary-container text-xs font-label mt-2" style="">Corona</span>
+<p class="text-surface-variant/40 font-body mt-4 text-sm" style="">Transmutación &amp; Paz</p>
+<a class="mt-8 text-surface-bright font-label text-[10px] tracking-widest border-b border-surface-bright/20 pb-1 hover:text-secondary-container transition-colors" href="#" style="">VER JOYAS</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Promociones Turquoise Banner -->
+<section class="bg-secondary py-20 relative overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="text-center md:text-left">
+<h3 class="font-headline text-4xl text-on-secondary" style="">Ritos de Solsticio</h3>
+<p class="font-body text-xl text-on-secondary/80 mt-2" style="">Suscríbete y recibe un 15% en tu primera adquisición ancestral.</p>
+</div>
+<div class="flex gap-4 w-full md:w-auto">
+<input class="bg-transparent border-0 border-b border-on-secondary/40 text-on-secondary placeholder:text-on-secondary/40 focus:ring-0 w-full md:w-80 font-label text-sm tracking-widest" placeholder="TU ALMA@CORREO.COM" type="email">
+<button class="bg-on-secondary text-secondary px-8 py-3 font-label text-sm tracking-widest" style="">UNIRSE</button>
+</div>
+</div>
+<div class="absolute -right-20 -bottom-20 opacity-10">
+<span class="material-symbols-outlined text-[300px]" data-icon="auto_awesome" style="">auto_awesome</span>
+</div>
+</section>
+<!-- Comunidad -->
+<section class="bg-primary py-32 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="font-headline text-5xl text-on-primary" style="">Voces de la Comunidad</h2>
+<div class="flex justify-center gap-2 mt-4 text-secondary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-bright p-10 relative">
+<span class="absolute top-8 left-8 text-6xl text-primary/10 font-serif" style="">“</span>
+<p class="relative z-10 font-body text-xl italic text-on-surface-variant leading-relaxed" style="">
+                        "La pieza que recibí no es solo joyería, se siente cargada de una energía especial. Puedo sentir el cuidado y el propósito de Yonatan en cada detail."
+                    </p>
+<div class="mt-8 flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-dim"></div>
+<div>
+<p class="font-label text-sm" style="">Lucía M.</p>
+<p class="text-[10px] text-primary tracking-widest" style="">CUSCO, PERÚ</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-bright p-10 relative">
+<span class="absolute top-8 left-8 text-6xl text-primary/10 font-serif" style="">“</span>
+<p class="relative z-10 font-body text-xl italic text-on-surface-variant leading-relaxed" style="">
+                        "El anillo de Cuarzo Rutilado superó mis expectativas. La presentación en pergamino y el estuche artesanal hacen que sea una experiencia de unboxing mágica."
+                    </p>
+<div class="mt-8 flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-dim"></div>
+<div>
+<p class="font-label text-sm" style="">Julien B.</p>
+<p class="text-[10px] text-primary tracking-widest" style="">GINEBRA, SUIZA</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-bright p-10 relative">
+<span class="absolute top-8 left-8 text-6xl text-primary/10 font-serif" style="">“</span>
+<p class="relative z-10 font-body text-xl italic text-on-surface-variant leading-relaxed" style="">
+                        "Llevar el amuleto del Cóndor me da una sensación de fuerza diaria. Es arte que se vive, no solo que se luce."
+                    </p>
+<div class="mt-8 flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-dim"></div>
+<div>
+<p class="font-label text-sm" style="">Elena S.</p>
+<p class="text-[10px] text-primary tracking-widest" style="">MADRID, ESPAÑA</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20 grid grid-cols-3 md:grid-cols-6 gap-2">
+<img alt="Insta 1" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="close-up of artisan's hands working with silver wires under warm lamp light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuTUdvggoP4OC66JeY7E8dRZK2c0NbPuiCJEhMWGnSv3CqsvuW_1_HywwaGD0JDwI6MbXN8XPAJdqA9r_aO1rFRPVLMGLG0fGgVGVAFRS8OKuhr_Yhmym6C1IafN0KW106flCKo4Cry1TAIgaz0sNfTpRTpXLhCqwgz6SArs0o1u6V3ljHanMuqqTBEde7nBxmqU9jz3FN2nyeNhABDjMz6qE0VyWLceQZYSXyWXhzo6cjbGK1GtsBhTcv5rrNPqmFILcols3HuAY0" style="">
+<img alt="Insta 2" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="a collection of raw labradorite stones with blue and green flashes of light on a dark wooden surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDynCUDn1tciYvexE3TZUcNUcciJ0k-qrjKq50z-XBjDLd4KiPE4mVXijbbOCxbccGOJb6Qr3RqghyTqWggSPi4R-kVYcCdpyogDsRYc63rqNC4_E-cmKR7fETi2D0KmAI5VYJsCxECIj-8G8xDt3Txpq2kHGF7K6McJBdjI-jTuJv2Yr2m4Rpt3I93V9TR1DSlJlySdqjSMKEBjpYRnyqlDTHb1oL9aDrYBtQApGOTBUhLzBkkPBlpZIL-HfxHiMnxLR0UmvhRC36Y" style="">
+<img alt="Insta 3" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="detailed macro shot of a hand-stamped silver hallmark on the back of a pendant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZZ3yihePVRqkZPwa9JwMe_k7yI5ryDwKXKQl4N2XqgY_alzBy7pH0V7BH4OY_ooscbqIcDnadd_nLhztquLjWypYPE43IoPaoJy0aKS75iNf7kRviPqPsF7aKOhlOGqBRUkRgLXQpw5YIHVWpeA-z5ZNOLctTqjKDeO-17O1wVdrjkvLv_rsncsXnVd0Jeiiu050ExWxvmtJ4yvTsQu2UclweXU7CWv_O4zYQNyWOs1igbAy89_KdA2ISgtPGsegMIslcJjIqptuW" style="">
+<img alt="Insta 4" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="overhead view of a workspace with sketchbooks, silver sheets, and a cup of herbal tea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyDNCOcHZFEowJTyLy5AhUdrsubn0txHMed32X_GDOVVtwv7mrGU4mKm7EIyEJy-g_6GRFek3kUGT0rNE_rYGvflLgFxdEPlAotjVXMlpI0JlK2kARwHA9E9xEQaq5PRE59040iizYhvdj_zjurNLb7hIPs1NZQt5vK_LW1268v4cxfeEYPvFhVKLIbQn6WYCtUDW0Za7yibnse0AOO6lEwm_ptsahkCLBFcE5_L5wrsjw90D1Arwx1SGmXVesr5WtNcgF-616828K" style="">
+<img alt="Insta 5" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="soft focus background of Peruvian mountains with a hand holding a crystal in the foreground" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR1DoWMAVVDv8asCD_nMM8o2iTCkH9I8Ob5sNnyqVEIZdkkccNcMnSsqUOR7D3k8BFBE-K2_eLph147hpI4tSvVw-T7ztX8KxbgQ4eu7RUuVypoiO3AngH4jHUlagtUJQHLHoVR-SG2YAAfbALZkELTwJXs_8cEzJyov-RbmiT7rL3DAWg0sf7YW8bbLTaxAYp2efQ-dJWWSwZPLcY2wDaSqjqHanO5JBoCCEXX8dBC0GYpZrYFSRrJY_-zp_zfSCQMU315IIKD9Wh" style="">
+<img alt="Insta 6" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="minimalist portrait of a person wearing a large silver statement necklace and neutral organic clothing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFNzJBnHwBmDyX0MrpJCAGf5zE2yWn1yCt_gl6K0MDdM1XGd3jGw0t2lCj15oRZFFIJeU9lL4Mejz-x9qAB8RagJKAEH9L_0l4S0iymlgsKR_4x0XHXnZI7RHRfewxTErqX8z-TCgyKwxkKBPPcNIRF0ZZzytwvfeADZjOYiWEsGPLaNJyfb3_ER-KwflOUPhtMWQWVGSwCpg5avuaiknifcWqkIG93fAq3rdkJ32iONe5g7rYo1KPK48IBvK46fXxsTEMQoXpsP89" style="">
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-32 bg-surface-dim/10">
+<div class="max-w-4xl mx-auto px-8">
+<h2 class="font-headline text-5xl text-center mb-16" style="">Preguntas del Viajero</h2>
+<div class="space-y-2">
+<div class="border-b border-primary/10 py-6 group cursor-pointer">
+<div class="flex justify-between items-center">
+<h4 class="font-label text-lg tracking-wide group-hover:text-primary transition-colors" style="">¿Cómo se eligen las piedras para cada joya?</h4>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform" style="">expand_more</span>
+</div>
+</div>
+<div class="border-b border-primary/10 py-6 group cursor-pointer">
+<div class="flex justify-between items-center">
+<h4 class="font-label text-lg tracking-wide group-hover:text-primary transition-colors" style="">¿Realizan envíos internacionales desde el Perú?</h4>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform" style="">expand_more</span>
+</div>
+</div>
+<div class="border-b border-primary/10 py-6 group cursor-pointer">
+<div class="flex justify-between items-center">
+<h4 class="font-label text-lg tracking-wide group-hover:text-primary transition-colors" style="">¿Puedo solicitar una pieza totalmente personalizada?</h4>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform" style="">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contacto Section (Integrated from SCREEN_4) -->
+<section class="py-32 bg-[#C4985A]/90 backdrop-blur-sm relative border-y border-white/10" id="contacto">
+<div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-2 gap-24 items-start">
+<!-- Left Column: Contact Info -->
+<div class="space-y-12">
+<div>
+<span class="font-label text-sm tracking-[0.3em] text-[#2C1A0A] opacity-70" style="">CONECTA CON EL TALLER</span>
+<h2 class="font-headline text-6xl text-[#2C1A0A] mt-4 mb-8" style="">Neuchâtel, Suiza</h2>
+<p class="font-body text-xl text-[#2C1A0A]/80 leading-relaxed max-w-md" style="">
+                Cada pieza es un diálogo entre mi herencia peruana y mi vida en las montañas suizas. Estaré encantado de escucharte.
+            </p>
+</div>
+<!-- Journey Illustration -->
+<div class="py-8 border-y border-[#2C1A0A]/10">
+<div class="flex items-center justify-between font-label text-[10px] tracking-widest text-[#2C1A0A]/60">
+<span class="" style="">NORTE DEL PERÚ</span>
+<div class="flex-1 mx-4 flex items-center gap-2">
+<div class="h-[1px] flex-1 bg-[#2C1A0A]/20"></div>
+<span class="material-symbols-outlined text-sm" style="">flight_takeoff</span>
+<div class="h-[1px] flex-1 bg-[#2C1A0A]/20"></div>
+</div>
+<span class="" style="">NEUCHÂTEL, SUIZA</span>
+</div>
+</div>
+<!-- Buttons & Links -->
+<div class="flex flex-col gap-4 max-w-xs">
+<button class="bg-[#698A48] text-white py-4 px-8 font-label text-xs tracking-widest flex items-center justify-center gap-3 hover:bg-[#5a763d] transition-all" style="">
+<span class="material-symbols-outlined text-lg" style="">chat</span> WHATSAPP DIRECTO
+            </button>
+<button class="border border-[#2C1A0A]/20 text-[#2C1A0A] py-4 px-8 font-label text-xs tracking-widest flex items-center justify-center gap-3 hover:bg-[#2C1A0A]/5 transition-all" style="">
+<span class="material-symbols-outlined text-lg" style="">mail</span> ENVIAR CORREO
+            </button>
+</div>
+<div class="flex gap-8 items-center pt-4">
+<a class="text-[#2C1A0A]/60 hover:text-[#2C1A0A] transition-colors" href="#" style=""><span class="font-label text-xs tracking-widest" style="">INSTAGRAM</span></a>
+<a class="text-[#2C1A0A]/60 hover:text-[#2C1A0A] transition-colors" href="#" style=""><span class="font-label text-xs tracking-widest" style="">FACEBOOK</span></a>
+</div>
+<!-- Stylized Map Placeholder -->
+<div class="w-full aspect-video bg-[#2C1A0A]/5 border border-[#2C1A0A]/10 flex items-center justify-center opacity-40">
+<span class="material-symbols-outlined text-4xl" style="">map</span>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="bg-white/10 p-12 backdrop-blur-md">
+<form class="space-y-12">
+<div class="space-y-8">
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b border-[#2C1A0A]/30 py-4 font-body text-lg focus:ring-0 focus:border-[#2C1A0A] placeholder:font-label placeholder:text-xs placeholder:tracking-widest placeholder:text-[#2C1A0A]/40" placeholder="NOMBRE" type="text">
+</div>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b border-[#2C1A0A]/30 py-4 font-body text-lg focus:ring-0 focus:border-[#2C1A0A] placeholder:font-label placeholder:text-xs placeholder:tracking-widest placeholder:text-[#2C1A0A]/40" placeholder="EMAIL" type="email">
+</div>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b border-[#2C1A0A]/30 py-4 font-body text-lg focus:ring-0 focus:border-[#2C1A0A] placeholder:font-label placeholder:text-xs placeholder:tracking-widest placeholder:text-[#2C1A0A]/40" placeholder="ASUNTO" type="text">
+</div>
+<div class="relative">
+<textarea class="w-full bg-transparent border-0 border-b border-[#2C1A0A]/30 py-4 font-body text-lg focus:ring-0 focus:border-[#2C1A0A] placeholder:font-label placeholder:text-xs placeholder:tracking-widest placeholder:text-[#2C1A0A]/40 resize-none" placeholder="MENSAJE" rows="4"></textarea>
+</div>
+</div>
+<button class="w-full bg-[#698A48] text-[#fff8f0] py-5 font-label text-sm tracking-[0.3em] hover:bg-[#5a763d] transition-all shadow-xl" type="submit" style="">
+                ENVIAR MENSAJE
+            </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Improved Footer (Integrated from SCREEN_4) -->
+<footer class="bg-[#2C1A0A] text-white pt-24 pb-12">
+<div class="max-w-screen-2xl mx-auto px-8 flex flex-col items-center">
+<!-- Chakana Logo Centered -->
+<div class="mb-8 flex flex-col items-center">
+<span class="material-symbols-outlined text-[#edd9a3] text-5xl mb-4" style="font-variation-settings: &quot;FILL&quot; 1;">filter_vintage</span>
+<h3 class="font-label text-2xl tracking-[0.4em] text-[#edd9a3]" style="">L'ATELIER PERUANO</h3>
+<p class="font-label text-[10px] tracking-[0.2em] opacity-60 mt-1" style="">DE YONATAN TORRES</p>
+</div>
+<!-- Tagline -->
+<p class="font-signature text-3xl text-[#698A48] mb-12" style="">Joyería Artesanal · Neuchâtel, Suiza</p>
+<!-- Navigation Links & Language selector -->
+<div class="flex flex-col items-center gap-8 mb-16">
+<div class="grid grid-cols-2 md:flex md:flex-row gap-x-12 gap-y-6 justify-center items-center font-label text-[11px] tracking-[0.2em] text-[#edd9a3]/60 uppercase text-center">
+<a class="hover:text-white transition-colors" href="#" style="">Colecciones</a>
+<a class="hover:text-white transition-colors" href="#" style="">Litoterapia</a>
+<a class="hover:text-white transition-colors" href="#" style="">Filosofía</a>
+<a class="hover:text-white transition-colors" href="#" style="">El Taller</a>
+<a class="hover:text-white transition-colors" href="#" style="">Envíos</a>
+<a class="hover:text-white transition-colors" href="#" style="">Términos</a>
+</div>
+<div class="flex gap-4 text-[10px] font-label tracking-widest text-[#edd9a3]/40">
+<button class="hover:text-white" style="">ES</button>
+<span class="" style="">|</span>
+<button class="hover:text-white" style="">FR</button>
+<span class="" style="">|</span>
+<button class="hover:text-white" style="">EN</button>
+</div>
+</div>
+<!-- Decorative Feathers -->
+<div class="flex gap-4 mb-8 opacity-20">
+<span class="material-symbols-outlined text-sm" style="">history_edu</span>
+<span class="material-symbols-outlined text-sm" style="">history_edu</span>
+<span class="material-symbols-outlined text-sm" style="">history_edu</span>
+<span class="material-symbols-outlined text-sm" style="">history_edu</span>
+<span class="material-symbols-outlined text-sm" style="">history_edu</span>
+</div>
+<!-- Bottom Strip -->
+<div class="w-full pt-8 border-t border-white/5 text-center">
+<p class="font-body text-xs tracking-widest text-[#edd9a3]/30" style="">
+                © 2025 L'Atelier Peruano · Hecho con manos artesanas en Neuchâtel, Suiza
+            </p>
+</div>
+</div>
+</footer>
+</body></html>

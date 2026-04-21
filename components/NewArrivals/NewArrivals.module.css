@@ -1,0 +1,154 @@
+.section {
+  padding: var(--section-padding-y) var(--section-padding-x);
+  background-color: rgba(255, 243, 215, 0.3); /* surface-container-low equivalent with transparency */
+  backdrop-filter: blur(2px);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-widest, 0.1em);
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: var(--text-2xl); /* approx 5xl */
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.viewAll {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  border-bottom: 1px solid rgba(105, 138, 72, 0.4);
+  padding-bottom: 0.25rem;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+.viewAll:hover {
+  color: var(--color-primary);
+}
+
+.carouselContainer {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem; /* Matches the gap so spacing is consistent */
+  animation: marquee 40s linear infinite;
+  min-width: max-content;
+}
+
+.carouselContainer:hover .carouselTrack {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Card Styles */
+.card {
+  width: 280px;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 320px;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.05); /* very subtle, equivalent to border-black/5 */
+}
+
+/* Modifier para el segundo elemento que no tenía padding para ser a full imagen */
+.imageWrapperFull {
+  padding: 0;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.7s ease;
+}
+
+.imageFull {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.card:hover .image,
+.card:hover .imageFull {
+  transform: scale(1.1);
+}
+
+.icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #c4c8b9; /* outline-variant */
+  z-index: 10;
+}
+
+.cardTitle {
+  font-family: var(--font-ui);
+  text-align: center;
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-widest, 0.1em);
+  margin-bottom: 0.25rem;
+}
+
+.cardPrice {
+  text-align: center;
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--color-primary);
+  margin: 0;
+}

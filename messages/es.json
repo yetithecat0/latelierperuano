@@ -1,0 +1,128 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "philosophy": "Filosofía",
+    "catalog": "Catálogo",
+    "litoterapia": "Litoterapia",
+    "community": "Comunidad",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "by": "de",
+    "tagline": "Creaciones Únicas en Plata 925",
+    "quote": "\"Al portar una de mis creaciones, llevas contigo la vibración de la tierra, el susurro del viento andino y la protección de los guardianes ancestrales.\"",
+    "explore": "EXPLORAR CATÁLOGO",
+    "history": "NUESTRA HISTORIA"
+  },
+  "PhilosophyStrip": {
+    "text": "LA PLATA 925 ES EL LIENZO. LAS PIEDRAS, EL ALMA. EL ARTE MOCHICA, EL LEGADO.",
+    "w1": "Ancestral",
+    "w2": "Artesanal",
+    "w3": "Espiritual",
+    "w4": "Holístico",
+    "w5": "Energético"
+  },
+  "Artesano": {
+    "title": "El Artesano",
+    "p1_bold": "L'Atelier Peruano nació en 2018",
+    "p1": " con una misión que va más allá de la joyería: crear piezas en plata 925 con piedras semipreciosas que no solo adornan, sino que ",
+    "p1_bold2": "acompañan, protegen y sanan",
+    "p1_end": ".",
+    "p2": "Los primeros pasos no fueron fáciles. Un espacio pequeño, recursos contados, la vida familiar entretejida con cada martillazo. Pero Yonatan nunca dejó de creer que cada obstáculo era, en realidad, una enseñanza. Y así, con la misma paciencia con la que se trabaja el metal — golpe a golpe, con fuego y con fe — el taller fue creciendo.",
+    "p3_start": "Hoy, ",
+    "p3_bold": "L'Atelier Peruano es un referente de joyería artesanal en Suiza",
+    "p3": ". No porque siga las tendencias, sino porque las ignora con orgullo. Porque aquí no se fabrican joyas. Se crean amuletos. Se graban historias. Se transmiten memorias de un pueblo que dominó el arte del metal siglos antes de que existiera la industria.",
+    "p4": "El espíritu Mochica vive en cada pluma tallada en plata."
+  },
+  "NewArrivals": {
+    "label": "RECIÉN FORJADO",
+    "title": "Nuevas Creaciones",
+    "viewAll": "VER TODO"
+  },
+  "Catalog": {
+    "title": "Catálogo Ancestral",
+    "filters": {
+      "TODOS": "TODOS",
+      "AMULETOS": "AMULETOS",
+      "ANILLOS": "ANILLOS",
+      "PULSERAS": "PULSERAS",
+      "PENDIENTES": "PENDIENTES"
+    },
+    "badges": {
+      "Personalizable": "Personalizable",
+      "Único": "Único",
+      "Edición Limitada": "Edición Limitada"
+    }
+  },
+  "Litoterapia": {
+    "subtitle": "EL PODER DE LA TIERRA",
+    "title": "Litoterapia Sagrada",
+    "description": "Descubre la vibración única de cada piedra y cómo armonizan tu energía vital.",
+    "explore": "EXPLORAR PIEZAS",
+    "stones": {
+      "labradorita": {
+        "title": "LABRADORITA",
+        "chakra": "TERCER OJO",
+        "power": "Misticismo & Intuición",
+        "meaning": "Despierta la magia interior y los talentos dormidos."
+      },
+      "lapis": {
+        "title": "LAPIS LÁZULI",
+        "chakra": "GARGANTA",
+        "power": "Verdad & Comunicación",
+        "meaning": "Fomenta la claridad mental y la expresión auténtica."
+      },
+      "piedra-luna": {
+        "title": "PIEDRA LUNA",
+        "chakra": "SACRO",
+        "power": "Crecimiento & Equilibrio",
+        "meaning": "Alquimia emocional y conexión con los ciclos lunares."
+      },
+      "amatista": {
+        "title": "AMATISTA",
+        "chakra": "CORONA",
+        "power": "Transmutación & Paz",
+        "meaning": "Calma la mente y abre el camino a la espiritualidad."
+      },
+      "malaquita": {
+        "title": "MALAQUITA",
+        "chakra": "CORAZÓN",
+        "power": "Transformación & Protección",
+        "meaning": "Limpia el aura y absorbe las energías negativas."
+      },
+      "crisocola": {
+        "title": "CRISOCOLA",
+        "chakra": "GARGANTA",
+        "power": "Empoderamiento Femenino",
+        "meaning": "Piedra de la ternura y la comunicación desde el alma."
+      }
+    }
+  },
+  "Community": {
+    "label": "EL IMPACTO",
+    "title": "Voces de la Comunidad"
+  },
+  "Contact": {
+    "addressTitle": "Neuchâtel, Suiza",
+    "description": "Grand-Rue 32, 2034 Peseux\nCada pieza es un diálogo entre mi herencia peruana y mi vida en las montañas suizas. Estaré encantado de escucharte.",
+    "journeyStart": "NORTE DEL PERÚ",
+    "journeyEnd": "NEUCHÂTEL, SUIZA",
+    "whatsappBtn": "WHATSAPP DIRECTO",
+    "emailBtn": "ENVIAR CORREO",
+    "form": {
+      "name": "NOMBRE",
+      "email": "EMAIL",
+      "subject": "ASUNTO",
+      "message": "MENSAJE",
+      "submit": "ENVIAR MENSAJE"
+    },
+    "footer": {
+      "by": "DE YONATAN TORRES",
+      "tagline": "Joyería Artesanal · Neuchâtel, Suiza",
+      "copyright": "© 2026 L'Atelier Peruano · Hecho con manos artesanas en Neuchâtel, Suiza"
+    }
+  },
+  "Common": {
+    "backToTop": "Volver arriba"
+  }
+}

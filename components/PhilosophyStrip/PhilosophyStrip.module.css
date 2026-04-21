@@ -1,0 +1,42 @@
+.stripSection {
+  background-color: var(--bg-deep); /* #2C1A0A */
+  padding: 2.5rem 0; /* Further reduction for a sleeker look */
+  overflow: hidden;
+}
+
+.pulseContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  white-space: nowrap;
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.wordsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* gap-6 */
+  color: var(--text-light); /* #edd9a3 or #F5EACF */
+  font-family: var(--font-ui);
+  font-size: var(--text-lg); /* text-2xl from html */
+  letter-spacing: 0.3em;
+}
+
+@media (min-width: 768px) {
+  .wordsContainer {
+    font-size: var(--text-xl);
+  }
+}
+
+.flare {
+  color: var(--color-secondary);
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}

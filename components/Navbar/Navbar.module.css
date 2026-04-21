@@ -1,0 +1,110 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  max-width: 1540px; /* Increased to allow it to go further left/right */
+  margin: 0 auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brandLogo {
+  height: 2rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.brandName {
+  font-family: var(--font-ui);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+}
+
+.links {
+  display: none;
+  gap: 1.25rem; /* Reduced gap to give more freedom */
+  align-items: center;
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  font-size: var(--text-sm);
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .links {
+    display: flex;
+  }
+}
+
+.linkItem a {
+  color: var(--text-primary);
+  opacity: 0.8;
+  transition: color 0.3s;
+}
+
+.linkItem a:hover {
+  color: var(--color-secondary);
+  opacity: 1;
+}
+
+.activeLink {
+  border-bottom: 1px solid rgba(0, 103, 124, 0.3);
+  padding-bottom: 0.25rem;
+  color: var(--color-secondary) !important;
+  opacity: 1 !important;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.languageSelect {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--text-primary);
+  opacity: 0.6;
+}
+
+.languageBtn {
+  font-size: var(--text-xs);
+  transition: color 0.3s;
+}
+
+.languageBtn:hover {
+  color: var(--color-secondary);
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: var(--color-secondary);
+}

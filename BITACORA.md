@@ -137,7 +137,12 @@
 *   **Justificación Técnica / UX:** Garantiza una correcta vista previa al compartir el enlace en WhatsApp, Instagram, Facebook, LinkedIn y X/Twitter — fundamental para las campañas de difusión y el alcance orgánico del taller.
 *   **Auditoría UX/UI:** Verificada la ruta pública de la imagen `/og.jpg` y las dimensiones recomendadas (1200×630px). URL canónica apuntando a `latelierperuano.com`.
 
-**[PASO 27] - Próximos Pasos (Propuesta)**
+**[PASO 28] - Preparación para Despliegue en Sub-ruta (/latelierperuano)**
+*   **Acción Realizada:** Configuración de `basePath: '/latelierperuano'` en `next.config.mjs` y actualización de metadatos en `layout.tsx` para incluir el prefijo en assets estáticos (favicon, OpenGraph).
+*   **Justificación Técnica / UX:** Preparación del proyecto para ser servido desde `gutiperu.com/latelierperuano`. El uso de `basePath` garantiza que Next.js gestione automáticamente el prefijo en rutas internas y componentes `next/image`, mientras que el ajuste manual en metadatos asegura la correcta carga de iconos y previsualizaciones sociales.
+*   **Auditoría UX/UI:** Verificado que los assets estáticos se referencian correctamente. Se reinició el servidor de desarrollo para aplicar los cambios de configuración.
+
+**[PASO 29] - Próximos Pasos (Propuesta)**
 *   Traducción completa de secciones restantes (i18n).
 *   Auditoría de accesibilidad general (aria-labels, focus management).
 *   Configuración de dominio personalizado en Vercel.

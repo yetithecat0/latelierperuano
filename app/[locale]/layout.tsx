@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Yonatan Torres" }],
   creator: "L'Atelier Peruano",
   icons: {
-    icon: "/favicon.png",
+    icon: "/latelierperuano/favicon.png",
   },
   openGraph: {
     type: "website",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "L'Atelier Peruano",
     images: [
       {
-        url: "/og.jpg",
+        url: "/latelierperuano/og.jpg",
         width: 1200,
         height: 630,
         alt: "L'Atelier Peruano — Joyería Artesanal en Plata 925, Neuchâtel Suiza",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "L'Atelier Peruano | Joyería Artesanal en Plata 925",
     description: "Creaciones únicas en plata 925 con piedras semipreciosas. Arte mochica vivo en Neuchâtel, Suiza.",
-    images: ["/og.jpg"],
+    images: ["/latelierperuano/og.jpg"],
   },
 };
 

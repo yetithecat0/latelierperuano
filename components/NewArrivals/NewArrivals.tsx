@@ -24,7 +24,7 @@ const MOCK_ARRIVALS: NewArrivalItem[] = [
     title: 'PENDIENTE SOLIS',
     price: 'CHF 320',
     icon: 'diamond',
-    image: '/images/products/launch-1.png',
+    image: '/latelierperuano/images/products/launch-1.png',
     padding: false
   },
   {
@@ -32,7 +32,7 @@ const MOCK_ARRIVALS: NewArrivalItem[] = [
     title: 'ANILLO LUNAR',
     price: 'CHF 380',
     icon: 'brightness_7',
-    image: '/images/products/launch-2.png',
+    image: '/latelierperuano/images/products/launch-2.png',
     padding: false
   },
   {
@@ -40,7 +40,7 @@ const MOCK_ARRIVALS: NewArrivalItem[] = [
     title: 'COLLAR ANDINO',
     price: 'CHF 420',
     icon: 'auto_awesome',
-    image: '/images/products/launch-3.png',
+    image: '/latelierperuano/images/products/launch-3.png',
     padding: false
   },
   {
@@ -48,7 +48,7 @@ const MOCK_ARRIVALS: NewArrivalItem[] = [
     title: 'PULSERA INTU',
     price: 'CHF 290',
     icon: 'spa',
-    image: '/images/products/launch-4.png',
+    image: '/latelierperuano/images/products/launch-4.png',
     padding: false
   }
 ];

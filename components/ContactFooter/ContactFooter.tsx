@@ -122,7 +122,7 @@ export default function ContactFooter() {
         <div className={`${styles.container} ${styles.footerWrapper}`}>
           <div className={styles.footerLogo}>
             <Image 
-              src="/brand/logo.png"
+              src="/latelierperuano/brand/logo.png"
               alt="L'Atelier Peruano Logo"
               width={48}
               height={48}

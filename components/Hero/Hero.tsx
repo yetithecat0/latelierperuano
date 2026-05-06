@@ -11,7 +11,7 @@ export default function Hero() {
       <div className={styles.chakanaWrapper}>
         <div className={styles.isotipoGhostWrapper}>
           <Image 
-            src="/brand/logo.png"
+            src="/latelierperuano/brand/logo.png"
             alt=""
             fill
             className={styles.isotipoGhost}

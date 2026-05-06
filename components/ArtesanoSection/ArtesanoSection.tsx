@@ -11,7 +11,7 @@ export default function ArtesanoSection() {
         <div className={styles.borderFrame}></div>
         <div className={styles.imageWrapper}>
           <Image 
-            src="/images/artesano.png"
+            src="/latelierperuano/images/artesano.png"
             alt="Portrait of Yonatan Torres at his workshop"
             fill
             className={styles.image}

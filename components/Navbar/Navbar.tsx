@@ -20,7 +20,7 @@ export default function Navbar() {
         {/* Brand Logo */}
         <div className={styles.brand}>
           <Image 
-            src="/brand/logo.png"
+            src="/latelierperuano/brand/logo.png"
             alt="L'Atelier Peruano Logo"
             width={32}
             height={32}

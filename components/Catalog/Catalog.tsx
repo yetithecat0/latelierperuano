@@ -30,14 +30,14 @@ const CATALOG_ITEMS: CatalogItem[] = [
     title: 'PUMA GUARDIÁN',
     price: 'CHF 320',
     category: 'AMULETOS',
-    image: '/images/puma.png'
+    image: '/latelierperuano/images/puma.png'
   },
   {
     id: 3,
     title: 'CÓNDOR ANDINO',
     price: 'CHF 380',
     category: 'AMULETOS',
-    image: '/images/condor.png'
+    image: '/latelierperuano/images/condor.png'
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const CATALOG_ITEMS: CatalogItem[] = [
     price: 'CHF 450',
     category: 'PULSERAS',
     badge: 'Único',
-    image: '/images/brazalete_inti.png'
+    image: '/latelierperuano/images/brazalete_inti.png'
   },
   {
     id: 5,
@@ -59,14 +59,14 @@ const CATALOG_ITEMS: CatalogItem[] = [
     title: 'COLLAR DE LABRADORITA',
     price: 'CHF 290',
     category: 'AMULETOS',
-    image: '/images/products/collar_labradorita.png'
+    image: '/latelierperuano/images/products/collar_labradorita.png'
   },
   {
     id: 7,
     title: 'SERPIENTE AMARU',
     price: 'CHF 210',
     category: 'AMULETOS',
-    image: '/images/serpiente.png'
+    image: '/latelierperuano/images/serpiente.png'
   },
   {
     id: 8,
@@ -87,7 +87,7 @@ const CATALOG_ITEMS: CatalogItem[] = [
     title: 'AMULETO DE PROTECCIÓN',
     price: 'CHF 340',
     category: 'AMULETOS',
-    image: '/images/amuleto.png'
+    image: '/latelierperuano/images/amuleto.png'
   },
   {
     id: 11,
@@ -102,7 +102,7 @@ const CATALOG_ITEMS: CatalogItem[] = [
     price: 'CHF 580',
     category: 'AMULETOS',
     badge: 'Edición Limitada',
-    image: '/images/products/chakana_grande.png'
+    image: '/latelierperuano/images/products/chakana_grande.png'
   }
 ];
 
